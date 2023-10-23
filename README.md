@@ -1,2 +1,2 @@
-# rpr-t1-z2_2022
-Tutorijal 1, zadatak 2, 2022.
+# rpr-t1-z2_2023
+Tutorijal 1, zadatak 2, 2023.
