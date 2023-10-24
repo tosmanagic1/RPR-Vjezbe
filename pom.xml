@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>ba.unsa.etf.rpr</groupId>
-  <artifactId>rpr-t2-z1_2022</artifactId>
+  <artifactId>rpr-tut2-z2_2022</artifactId>
   <version>0.1</version>
 
-  <name>rpr-t2-z1_2022</name>
+  <name>rpr-tut2-z2_2022</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -25,6 +25,7 @@
       <version>5.8.2</version>
       <scope>test</scope>
     </dependency>
+
   </dependencies>
 
   <build>
