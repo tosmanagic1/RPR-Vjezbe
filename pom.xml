@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>ba.unsa.etf.rpr</groupId>
-  <artifactId>rpr-tut2-z2_2022</artifactId>
+  <artifactId>rpr-t2-z3_2022</artifactId>
   <version>0.1</version>
 
-  <name>rpr-tut2-z2_2022</name>
+  <name>rpr-t2-z3_2022</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -25,11 +25,10 @@
       <version>5.8.2</version>
       <scope>test</scope>
     </dependency>
-
   </dependencies>
 
   <build>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (maybe moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
