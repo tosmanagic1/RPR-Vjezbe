@@ -41,7 +41,7 @@ public class LaptopDaoXMLFile implements LaptopDao {
                 return laptop;
             }
         }
-        return null;
+        throw new NeodgovarajuciProcesorException("Ne postoji laptop sa željenim procesorom.");
     }
 
     @Override
