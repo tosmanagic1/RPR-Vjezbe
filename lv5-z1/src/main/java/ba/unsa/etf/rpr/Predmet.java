@@ -24,6 +24,11 @@ public class Predmet implements Predstavi {
         return opis;
     }
 
+    public void setLista_ocjena(Ocjena o) {
+        this.lista_ocjena = new ArrayList<>();
+        this.lista_ocjena.add(o);
+    }
+
     @Override
     public String predstavi() {
         return "Informacije o Predmetu";

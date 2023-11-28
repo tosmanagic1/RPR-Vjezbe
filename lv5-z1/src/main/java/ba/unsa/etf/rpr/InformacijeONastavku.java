@@ -33,6 +33,11 @@ public class InformacijeONastavku extends LicneInformacije implements Predstavi,
         this.titula = titula;
     }
 
+    public void setLista_ocjena(Ocjena o) {
+        this.lista_ocjena = new ArrayList<>();
+        this.lista_ocjena.add(o);
+    }
+
     @Override
     public String predstavi() {
         return "Informacije o Nastavniku";
@@ -40,6 +45,6 @@ public class InformacijeONastavku extends LicneInformacije implements Predstavi,
 
     @Override
     public Ocjena ocijeni(Integer x) {
-        return null;
+        return new Ocjena(this, x);
     }
 }

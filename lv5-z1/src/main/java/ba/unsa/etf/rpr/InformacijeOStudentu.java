@@ -46,6 +46,6 @@ public class InformacijeOStudentu extends LicneInformacije implements Predstavi,
 
     @Override
     public Ocjena ocijeni(Integer x) {
-        return null;
+        return new Ocjena(this, x);
     }
 }
