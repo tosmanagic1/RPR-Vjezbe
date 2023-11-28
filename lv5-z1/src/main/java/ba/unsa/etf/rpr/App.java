@@ -50,7 +50,7 @@ public class App
 
         */
 
-        Scanner ulaz = new Scanner(System.in);
+       /* Scanner ulaz = new Scanner(System.in);
         System.out.println("Da li ste student ili nastavnik? Unesite (S za studenta, N za nastavnika, 0 za kraj): ");
         for (;;) {
             if (ulaz.nextLine().equals("S")) {
@@ -72,7 +72,21 @@ public class App
                 p.setLista_ocjena(ocjenaNastavnikaZaPredmet);
             }
             else if (ulaz.nextInt() == 0) break;
-        }
+        }*/
+
+        KolekcijaImena kI = new KolekcijaImena();
+        ArrayList<String> imenaIPrezimena = new ArrayList<>();
+        imenaIPrezimena.add("Tarik Osmanagić");
+        imenaIPrezimena.add("Alma Osmanagić");
+        imenaIPrezimena.add("Meho Mehić");
+        kI.setListaStringova(imenaIPrezimena);
+        Pobjednik pobjednik = new Pobjednik(kI);
+
+        System.out.println("Pobjednik: 1. Ime: " + pobjednik.getIme() + " 2. Prezime: "+ pobjednik.getPrezime() + " 3. Broj znakova: " + pobjednik.getBrojZnakova() + "\n");
+
+
+
+
 
 
 
