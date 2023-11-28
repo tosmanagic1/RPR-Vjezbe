@@ -1,11 +1,11 @@
 package ba.unsa.etf.rpr;
 
-public class InformacijeOStudentu {
+public class InformacijeOStudentu extends LicneInformacije implements Predstavi{
 
-    String ime;
-    String prezime;
-    String godinaStudija;
-    String brojIndexa;
+    private String ime;
+    private String prezime;
+    private String godinaStudija;
+    private String brojIndexa;
 
     public String getIme() {
         return ime;
@@ -37,5 +37,10 @@ public class InformacijeOStudentu {
 
     public void setBrojIndexa(String brojIndexa) {
         this.brojIndexa = brojIndexa;
+    }
+
+    @Override
+    public String predstavi() {
+        return "Informacije o Studentu";
     }
 }

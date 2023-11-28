@@ -1,8 +1,8 @@
 package ba.unsa.etf.rpr;
 
-public class LicneInformacije {
-    String ime;
-    String prezime;
+public class LicneInformacije implements Predstavi{
+    private String ime;
+    private String prezime;
 
     public String getIme() {
         return ime;
@@ -18,5 +18,10 @@ public class LicneInformacije {
 
     public void setPrezime(String prezime) {
         this.prezime = prezime;
+    }
+
+    @Override
+    public String predstavi() {
+        return "Licne informacije";
     }
 }
