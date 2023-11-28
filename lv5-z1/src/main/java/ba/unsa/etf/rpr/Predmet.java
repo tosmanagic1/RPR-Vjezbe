@@ -1,8 +1,12 @@
 package ba.unsa.etf.rpr;
 
+import java.util.ArrayList;
+
 public class Predmet implements Predstavi {
     private String naziv;
     private String opis;
+
+    private ArrayList<Ocjena> lista_ocjena;
 
     public void setNaziv(String naziv) {
         this.naziv = naziv;

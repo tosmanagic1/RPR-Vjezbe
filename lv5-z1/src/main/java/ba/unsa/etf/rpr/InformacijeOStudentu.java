@@ -1,6 +1,6 @@
 package ba.unsa.etf.rpr;
 
-public class InformacijeOStudentu extends LicneInformacije implements Predstavi{
+public class InformacijeOStudentu extends LicneInformacije implements Predstavi, MozeOcijeniti{
 
     private String ime;
     private String prezime;
@@ -42,5 +42,10 @@ public class InformacijeOStudentu extends LicneInformacije implements Predstavi{
     @Override
     public String predstavi() {
         return "Informacije o Studentu";
+    }
+
+    @Override
+    public Ocjena ocijeni(Integer x) {
+        return null;
     }
 }
