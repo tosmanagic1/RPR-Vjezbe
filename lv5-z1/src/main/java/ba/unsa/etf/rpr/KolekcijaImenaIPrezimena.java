@@ -29,10 +29,19 @@ public class KolekcijaImenaIPrezimena {
     }
 
     public int getIndexNajduzegPara () {
-        return 0;
+        String najduzeIme = imena.get(0);
+        String najduzePrezime = prezimena.get(0);
+        String najduzeImeIPrezime = imena.get(0) + " " + prezimena.get(0);
+        int index = 0;
+        for (int i = 0; i < imena.size(); i++) {
+            if (imena.get(i) .length() > najduzeIme.length()) najduzeIme = imena.get(i);
+            if (prezimena.get(i).length() > najduzePrezime.length()) najduzePrezime = prezimena.get(i);
+            if (najduzeIme.length() + najduzePrezime.length() > najduzeImeIPrezime.length()) index = i;
+        }
+        return index;
     }
 
     public String getImeiPrezime(int i) {
-        return null;
+        return imena.get(i) + " " + prezimena.get(i);
     }
 }

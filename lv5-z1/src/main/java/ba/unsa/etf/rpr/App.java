@@ -84,6 +84,22 @@ public class App
 
         System.out.println("Pobjednik: 1. Ime: " + pobjednik.getIme() + " 2. Prezime: "+ pobjednik.getPrezime() + " 3. Broj znakova: " + pobjednik.getBrojZnakova() + "\n");
 
+        KolekcijaImenaIPrezimena kIIP = new KolekcijaImenaIPrezimena();
+        ArrayList<String> imena = new ArrayList<>();
+        ArrayList<String> prezimena = new ArrayList<>();
+        imena.add("Tarik");
+        imena.add("Almir");
+        imena.add("Irfan");
+        prezimena.add("Osmanagić");
+        prezimena.add("Šećerović");
+        prezimena.add("Hadžihafizbegović");
+        kIIP.setImena(imena);
+        kIIP.setPrezimena(prezimena);
+
+        System.out.println("Ime i prezime sa indexom 1: " + kIIP.getImeiPrezime(1));
+        System.out.println("Index najdužeg para: " + kIIP.getIndexNajduzegPara());
+
+
 
 
 
